@@ -129,16 +129,24 @@ def game_hash
   }
 end
 
+<<<<<<< HEAD
 def num_points_scored(playerLookUp)
   game_hash.each do |team, teamStats|
     teamStats[:players].each do |stats|
       if stats[:player_name] == playerLookUp
         return stats[:points]
       end
+=======
+def num_points_scored (playerLookUp)
+  game_hash.each do |team, teamStats|
+    teamStats[:player_name].each do |player|
+    binding.pry
+>>>>>>> d2e6476c5b34403338b67cb5e71b237b9eca1c76
     end
   end
 end
 
+<<<<<<< HEAD
 def shoe_size(playerLookUp)
   game_hash.each do |team, teamStats|
     teamStats[:players].each do |stats|
@@ -215,6 +223,10 @@ def big_shoe_rebounds
   end
   return rebounds
 end
+=======
+
+
+>>>>>>> d2e6476c5b34403338b67cb5e71b237b9eca1c76
 
 
 
